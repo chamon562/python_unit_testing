@@ -1,6 +1,6 @@
 def add(x, y):
     """Add Function"""
-    return x + y
+    return x + y + 1
 
 def subtract(x, y):
     """Add Function"""
@@ -12,4 +12,7 @@ def multiply(x, y):
 
 def divide(x, y):
     """Add Function"""
+    if y == 0:
+        raise ValueError('you cannot divide by zero!')
+
     return x / y
